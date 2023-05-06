@@ -1,0 +1,104 @@
+.vbox {
+  -fx-padding-top: 2rem;
+  -fx-alignment: top-center;
+
+  -fx-opacity: 0.1;
+  -fx-font-family: "Sansation";
+  -fx-pref-width: 0px;
+  -fx-transition: all 5s;
+}
+
+.vbox:hover,
+.vbox:focus-within {
+  -fx-pref-width: 280px;
+
+  -fx-opacity: 1;
+  /* -fx-pref-width: 280px; */
+  -fx-opacity: 0.5;
+  /* -fx-width: 10px; */
+  -fx-text-fill: white;
+  -fx-prompt-text-fill: white;
+}
+
+.vbox:focused {
+  -fx-pref-width: 280px;
+}
+
+.vbox .auto-complete-text-field:focus-within {
+  -fx-pref-width: 280px;
+  -fx-opacity: 1;
+  /* -fx-width: 280px; */
+
+  -fx-text-fill: white;
+  -fx-prompt-text-fill: white;
+}
+
+.image-view {
+  -fx-margin-top: 10px;
+  -fx-padding-top: 2rem;
+  -fx-alignment: left;
+  -fx-background-color: black;
+}
+
+.label {
+  -fx-text-align: left;
+  -fx-font-size: 20px;
+
+  -fx-text-fill: white;
+}
+
+.auto-complete-text-field {
+  -fx-font-size: 15px;
+}
+
+.auto-complete-text-field .float {
+  -fx-text-fill: white;
+}
+
+.auto-complete-text-field .text-field {
+  -fx-text-fill: white;
+}
+
+.password-fild {
+  -fx-text-fill: white;
+}
+
+.mfx-button {
+  -fx-border-radius: 10px;
+}
+
+/* -fx-display: flex;
+-fx-flex-direction: column;
+-fx-flex-wrap: nowrap;
+-fx-justify-content: space-evenly;
+-fx-align-items: stretch; */
+
+/* -fx-transform: translate(50px, 5px); */
+/* -fx-animation-name : fadeIn ;
+-fx-animation-duration : 5s;
+-fx-animation-
+@keyframes fadeIn {
+from{
+    -fx-opacity : 0;
+    transform: translateX(0px);
+}
+to{
+    -fx-opacity: 1;
+    -fx-transform: translateX(-50 0px);
+-fx-pref-width: 280px;
+}
+
+} */
+
+/* -fx-background-image: url("../../Image/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg");
+-fx-background-size: cover; */
+/* align-items: center; */
+/* -fx-alignement: center; */
+
+/* -fx-alignment: left; */
+
+/* -fx-background-color: #ddd; */
+/* -fx-pref-width: 280px; */
+/* -fx-opacity: 0.7; */
+/* -fx-font-family: "Lucida Console"; */
+/* -fx-opacity: 1; */

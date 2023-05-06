@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import jfxtras.scene.control.*?>
+
+<AnchorPane fx:id="dashboardPane" prefHeight="672.0" prefWidth="1040.0" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="338.0" text="Configurer votre application de pharmacie.">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <Group layoutX="54.0" layoutY="148.0">
+         <children>
+            <AnchorPane style="-fx-background-color: white;">
+               <children>
+                  <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#fafafa00" height="152.0" stroke="#1d242e4d" strokeType="INSIDE" width="425.0" />
+                  <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#fafafa00" height="40.0" stroke="#1d242e4d" strokeType="INSIDE" width="425.0" />
+                  <JFXTogglePane />
+                  <JFXToggleNode contentDisplay="CENTER" focusTraversable="false" layoutX="335.0" layoutY="10.0" minHeight="20.0" prefHeight="20.0" prefWidth="30.0" textAlignment="CENTER">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="btnAction" />
+                     </toggleGroup>
+                  </JFXToggleNode>
+               </children>
+            </AnchorPane>
+            <Label layoutX="30.0" layoutY="10.0" prefHeight="17.0" prefWidth="112.0" text="Identification ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="95.0" prefHeight="25.0" prefWidth="172.0" text="Myt 4B Pharmacie">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="95.0" prefHeight="25.0" prefWidth="111.0" text="PH349TY228">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="50.0" prefHeight="25.0" prefWidth="179.0" text="Nom de la Pharmacie">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="50.0" prefHeight="25.0" prefWidth="141.0" text="ID Pharmacie">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+           
+         </children>
+      </Group>
+      <Label layoutX="54.0" layoutY="45.0" prefHeight="32.0" prefWidth="304.0" text="Configurations">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="520.0" layoutY="148.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="24.0" layoutY="10.0" prefHeight="17.0" prefWidth="112.0" text="Propriètaire">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#1d242e4d" strokeType="INSIDE" width="425.0" />
+            <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="40.0" stroke="#1d242e4d" strokeType="INSIDE" width="425.0" />
+            <Label layoutX="24.0" layoutY="95.0" prefHeight="25.0" prefWidth="158.0" text="DevTeam">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="95.0" prefHeight="26.0" prefWidth="194.0" text="976Devteam@gmail.com">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="50.0" prefHeight="25.0" prefWidth="179.0" text="Nom du propriétaire">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="50.0" prefHeight="25.0" prefWidth="141.0" text="Email ID ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXToggleNode contentDisplay="CENTER" focusTraversable="false" layoutX="335.0" layoutY="10.0" minHeight="20.0" prefHeight="20.0" prefWidth="30.0" textAlignment="CENTER" toggleGroup="$btnAction">
+               <graphic>
+                  <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Image/pencil.png" />
+                     </image>
+                  </ImageViewButton>
+               </graphic>
+            </JFXToggleNode>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="54.0" layoutY="320.6000061035156" style="-fx-background-color: #ffffffff;">
+         <children>
+            <GridPane focusTraversable="true" prefHeight="334.0" prefWidth="426.0" style="background-color: white;" stylesheets="@../../stylesheet/gridConfigPane.css">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="143.4" minHeight="2.6000122070312557" prefHeight="34.7999755859375" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="294.40000000000003" minHeight="10.0" prefHeight="254.60000000000002" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="120.80001220703127" minHeight="0.0" prefHeight="42.599999999999966" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#fafafa00" height="40.0" stroke="#1d242e4d" strokeType="OUTSIDE" width="425.0" />
+                  <Label contentDisplay="CENTER" prefHeight="26.0" prefWidth="58.0" text="Pages" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="58.0" text="Action" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="190.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#fafafa00" height="256.0" stroke="#1d242e4d" strokeType="OUTSIDE" width="425.0" GridPane.rowIndex="1" />
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton blendMode="MULTIPLY" fitHeight="12.0" fitWidth="12.0" focusTraversable="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png" />
+                           </image>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <Label prefHeight="26.0" prefWidth="130.0" text="Dashboard">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="105.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Hyperlink text="Ajouter sous page" textFill="#03a9f5">
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="17.12493896484375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="190.0" top="105.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" top="105.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/trash.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="390.0" top="105.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <Label prefHeight="26.0" prefWidth="130.0" text="Inventaire">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="190.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Hyperlink text="Ajouter sous page" textFill="#03a9f5">
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="17.12493896484375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="190.0" top="190.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" top="190.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/trash.png../../../Image/trash.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="390.0" top="190.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <Label prefHeight="26.0" prefWidth="130.0" text="Rapports">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="265.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Hyperlink text="Ajouter sous page" textFill="#03a9f5">
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="17.12493896484375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="190.0" top="265.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" top="265.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/trash.png../../../Image/trash.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="390.0" top="265.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <Label prefHeight="26.0" prefWidth="130.0" text="Configurations">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="340.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Hyperlink text="Ajouter sous page" textFill="#03a9f5">
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="17.12493896484375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="190.0" top="340.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" top="340.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <JFXToggleNode minHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/trash.png../../../Image/trash.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="390.0" top="340.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <Label prefHeight="16.0" prefWidth="130.0" text="Gestion clientel">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="415.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Hyperlink text="Ajouter sous page" textFill="#03a9f5">
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="17.12493896484375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="190.0" top="415.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" top="415.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/trash.png../../../Image/trash.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="390.0" top="415.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <Label prefHeight="26.0" prefWidth="130.0" text="Notifications">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="490.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Hyperlink text="Ajouter sous page" textFill="#03a9f5">
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="17.12493896484375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="190.0" top="490.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/pencil.png../../../Image/pencil.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="350.0" top="490.0" />
+                     </GridPane.margin>
+                  </JFXToggleNode>
+                  <JFXToggleNode minHeight="20.0" prefHeight="20.0" prefWidth="30.0" toggleGroup="$btnAction">
+                     <GridPane.margin>
+                        <Insets left="390.0" top="490.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageViewButton fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/trash.png../../../Image/trash.png" />
+                           </image>
+                        </ImageViewButton>
+                     </graphic>
+                  </JFXToggleNode>
+                  <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#fafafa00" height="40.0" stroke="#1d242e4d" strokeType="OUTSIDE" width="425.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Hyperlink prefHeight="22.0" prefWidth="210.0" text="Ajouter nouveau page" textFill="#03a9f5">
+                     <GridPane.margin>
+                        <Insets left="25.0" top="590.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <MFXFontIcon description="mfx-plus" size="15.0" textAlignment="CENTER" wrappingWidth="26.7249755859375">
+                           <color>
+                              <Color red="0.0117647061124444" green="0.6627451181411743" blue="0.9607843160629272" />
+                           </color>
+                        </MFXFontIcon>
+                     </graphic>
+                  </Hyperlink>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

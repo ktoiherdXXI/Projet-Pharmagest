@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Intellij\\jdbc\\postgresql-42.5.0.jar"
+    ]
+}

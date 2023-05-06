@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import jfxtras.scene.control.*?>
+
+<AnchorPane fx:id="grpMedicamentPane" prefHeight="672.0" prefWidth="1040.0" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerGrpMedicPane">
+   <children>
+      <Label layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="133.0" text="Inventaire" textFill="#1d242e80">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label accessibleRole="HYPERLINK" accessibleRoleDescription="hyperlink" layoutX="214.0" layoutY="41.0" prefHeight="32.0" prefWidth="220.0" text="Medicine Groupe">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="libele_grp_gen" layoutX="458.0" layoutY="41.0" prefHeight="32.0" prefWidth="500.0" text="Generique Medicine (02)">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="428.0" text="Liste des groupes de médicaments disponible en vente">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="btnAjoutMedicament" layoutX="785.0" layoutY="77.0" onAction="#openInfo" prefHeight="46.0" prefWidth="220.0" rippleColor="WHITE" style="-fx-background-color: #F0483E;" text="Ajouter un Médicament" textAlignment="CENTER" textFill="WHITE">
+         <graphic>
+            <MFXFontIcon description="mfx-plus" selectionEnd="1" selectionFill="#ffffff00" size="20.0" strokeLineCap="ROUND" tabSize="10" textAlignment="CENTER" wrappingWidth="31.20007310807705">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </MFXFontIcon>
+         </graphic>
+         <font>
+            <Font name="Papyrus" size="15.0" />
+         </font>
+      </MFXButton>
+      <MFXTableView fx:id="grpMedicTable" accessibleRole="TABLE_VIEW" layoutX="53.0" layoutY="151.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="955.0" />
+      <MFXButton layoutX="54.0" layoutY="587.0" prefHeight="46.0" prefWidth="220.0" rippleColor="WHITE" style="-fx-border-color: #F0483E;" text="Supprimer le Groupe" textFill="#f0483e">
+         <font>
+            <Font name="Papyrus" size="15.0" />
+         </font>
+         <graphic>
+            <ImageViewButton fitHeight="20.0" fitWidth="15.0">
+               <image>
+                  <Image url="@../../../Image/trash.png" />
+               </image>
+            </ImageViewButton>
+         </graphic>
+      </MFXButton>
+      <MFXTextField fx:id="data" layoutX="513.0" layoutY="76.0" prefHeight="47.0" prefWidth="153.0" />
+   </children>
+</AnchorPane>

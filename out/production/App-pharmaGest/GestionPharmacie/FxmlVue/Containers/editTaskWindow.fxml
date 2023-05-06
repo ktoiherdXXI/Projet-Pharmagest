@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="124.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.EditTaskController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" prefHeight="183.0" prefWidth="482.0" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="218.0" text="Modifier la tâche" textAlignment="CENTER" VBox.vgrow="SOMETIMES">
+               <font>
+                  <Font name="Barlow Condensed Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="400.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <MFXTextField fx:id="taskNameTextField" floatMode="BORDER" floatingText="Nom de la tâche " prefHeight="15.0" prefWidth="222.0" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <MFXDatePicker fx:id="taskDatePicker" floatMode="ABOVE" promptText="Date" />
+                  <MFXComboBox fx:id="taskTimeComboBox" floatMode="ABOVE" prefHeight="39.0" prefWidth="178.0" promptText="heure "/>
+                  <MFXComboBox fx:id="taskFrequencyComboBox" floatMode="ABOVE" prefHeight="38.0" prefWidth="170.0" promptText="Fréquence "/>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+    </children>
+</AnchorPane>

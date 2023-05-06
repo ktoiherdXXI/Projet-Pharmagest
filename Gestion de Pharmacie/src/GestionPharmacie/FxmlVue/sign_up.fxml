@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="register" prefHeight="491.0" prefWidth="784.0" style="-fx-background-color: White;" stylesheets="@../stylesheet/opacityPane.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControlRegisterFrame">
+   <children>
+      <ImageView fitHeight="76.0" fitWidth="105.0" layoutX="29.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Image/Group3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="323.0" fitWidth="495.0" focusTraversable="true" layoutX="14.0" layoutY="105.0" nodeOrientation="INHERIT" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/Group2.png" />
+         </image>
+         <effect>
+            <Blend mode="RED" />
+         </effect>
+      </ImageView>
+      <MFXButton fx:id="btnRegister" layoutX="420.0" layoutY="442.0" onAction="#InsertUserData" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #079BBB;" text="Sign up">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6558641791343689" green="0.8007973432540894" blue="0.8333333134651184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </MFXButton>
+      <MFXButton depthLevel="LEVEL3" layoutX="300.0" layoutY="432.0" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: #079BBB;" text="Recevez-votre mot par mail" visible="false">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6558641791343689" green="0.8007973432540894" blue="0.8333333134651184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </MFXButton>
+      <TextField fx:id="name" layoutX="265.0" layoutY="54.0" prefWidth="250.0" promptText="Nom" />
+      <TextField fx:id="lastName" layoutX="265.0" layoutY="99.0" prefHeight="15.0" prefWidth="250.0" promptText="Prénom" />
+      <TextField fx:id="fonction" layoutX="265.0" layoutY="144.0" prefHeight="15.0" prefWidth="250.0" promptText="Fonction" />
+      <TextField fx:id="address" layoutX="265.0" layoutY="188.0" prefHeight="15.0" prefWidth="250.0" promptText="Adresse" />
+      <TextField fx:id="phone" layoutX="265.0" layoutY="235.0" prefHeight="15.0" prefWidth="250.0" promptText="Téléphone" />
+      <TextField fx:id="mail" layoutX="265.0" layoutY="281.0" prefHeight="15.0" prefWidth="250.0" promptText="Email" styleClass="id" stylesheets="@../stylesheet/LoginStyle.css" />
+      <PasswordField fx:id="password" layoutX="265.0" layoutY="332.0" prefHeight="15.0" prefWidth="250.0" promptText="Mot de passe" />
+      <PasswordField fx:id="cPassword" layoutX="265.0" layoutY="382.0" prefHeight="15.0" prefWidth="250.0" promptText="Mot de passe" />
+      <Label layoutX="283.0" layoutY="2.0" prefHeight="35.0" prefWidth="202.0" text="⚕Votre Pharmacie⚕">
+         <font>
+            <Font name="Colonna MT" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7894737124443054" green="0.5950292348861694" blue="0.40058478713035583" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9789473414421082" green="0.9789473414421082" blue="0.9789473414421082" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="344.0" layoutY="33.0" text="(Inscription)">
+         <font>
+            <Font name="Elektra" size="12.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="btnConnect" layoutX="265.0" layoutY="437.0" onAction="#GoToConnexionPage" prefHeight="43.0" prefWidth="146.0" text="Avez- vous un compte? Connectez-vous! " textAlignment="CENTER" textFill="#fff8f8" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="msgErr" layoutX="265.0" layoutY="409.0" prefHeight="18.0" prefWidth="250.0" />
+      <Label fx:id="msgConfirm" layoutX="265.0" layoutY="409.0" prefHeight="18.0" prefWidth="250.0" textFill="RED" />
+   </children>
+</AnchorPane>

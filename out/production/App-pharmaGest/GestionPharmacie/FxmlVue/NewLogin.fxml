@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import jfxtras.scene.control.*?>
+
+<BorderPane fx:id="connectStage" stylesheets="@../stylesheet/opacityPane.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControlConnectFrame">
+   <center>
+      <AnchorPane fx:id="loginPane" prefHeight="610.0" prefWidth="1064.0" stylesheets="@../stylesheet/opacityPane.css">
+         <children>
+            <ImageView fitHeight="323.0" fitWidth="496.0" focusTraversable="true" layoutX="356.0" layoutY="70.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/Group2.png" />
+               </image>
+               <effect>
+                  <Blend mode="RED" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="105.0" layoutX="29.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/Group3.png" />
+               </image>
+            </ImageView>
+            <MFXTextField fx:id="login" floatingText="Identifiant" layoutX="33.0" layoutY="199.0" measureUnitGap="10.0" prefHeight="50.0" prefWidth="225.0" promptText="exemple@sample.com" styleClass="id" stylesheets="@../stylesheet/LoginStyle.css">
+               <textFill>
+                  <Color red="0.8736842274665833" green="0.8736842274665833" blue="0.8736842274665833" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXTextField>
+            <MFXPasswordField fx:id="pass" floatingText="Mot de passe" layoutX="34.0" layoutY="270.0" measureUnitGap="10.0" prefHeight="50.0" prefWidth="224.0" styleClass="prompt-mdp" stylesheets="@../stylesheet/LoginStyle.css">
+               <textFill>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXPasswordField>
+            <MFXButton fx:id="loginBtn" layoutX="158.0" layoutY="346.0" onAction="#Verif_Id" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #079BBB;" text="Login">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6558641791343689" green="0.8007973432540894" blue="0.8333333134651184" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </MFXButton>
+            <Hyperlink layoutX="34.0" layoutY="350.0" prefHeight="24.0" prefWidth="118.0" stylesheets="@../stylesheet/LoginStyle.css" text="Mot de passe oublié ?">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="btnRegister" layoutX="97.0" layoutY="388.0" onAction="#GoToRegister" prefHeight="26.0" prefWidth="105.0" stylesheets="@../stylesheet/LoginStyle.css" text="Inscrivez-vous !" />
+            <MFXTextField floatingText="Identifiant" layoutX="37.0" layoutY="420.0" measureUnitGap="10.0" prefHeight="50.0" prefWidth="225.0" promptText="exemple@sample.com" styleClass="id" stylesheets="@../stylesheet/LoginStyle.css" visible="false">
+               <textFill>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXTextField>
+            <MFXButton depthLevel="LEVEL3" layoutX="300.0" layoutY="432.0" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: #079BBB;" text="Recevez-votre mot par mail" visible="false">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6558641791343689" green="0.8007973432540894" blue="0.8333333134651184" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <VBox fillWidth="false" prefHeight="607.0" prefWidth="294.0" styleClass="vbox" stylesheets="@../stylesheet/vboxLogin.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageViewButton />
+            <MFXIconWrapper disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="57.0" translateX="-145.0">
+               
+            </MFXIconWrapper>
+            <ImageViewButton />
+            <ImageView blendMode="DARKEN" cache="true" depthTest="ENABLE" fitHeight="65.0" fitWidth="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/stethoscope%201.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" prefHeight="30.0" prefWidth="174.0" text="Database Settings" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="147.0" text="Database host" visible="false" />
+            <AutoCompleteTextField fx:id="dbHost" floatText="Database host" />
+            <Label alignment="CENTER" layoutX="56.0" layoutY="94.0" prefHeight="20.0" prefWidth="59.0" text="Port" visible="false" />
+            <AutoCompleteTextField fx:id="port" floatText="Port" layoutX="10.0" layoutY="128.0" />
+            <Label alignment="CENTER" layoutX="112.0" layoutY="115.0" prefHeight="20.0" prefWidth="150.0" text="Database name" visible="false" />
+            <AutoCompleteTextField fx:id="dbName" floatText="Database name" layoutX="10.0" layoutY="189.0" />
+            <Label alignment="CENTER" layoutX="69.0" layoutY="137.0" prefHeight="20.0" prefWidth="147.0" text="Database User" visible="false" />
+            <AutoCompleteTextField fx:id="dbUser" floatText="Database User" layoutX="10.0" layoutY="249.0" />
+            <Label alignment="CENTER" layoutX="69.0" layoutY="158.0" prefHeight="20.0" prefWidth="200.0" text="Database password" visible="false" />
+            <PasswordField fx:id="dbPswd" promptText="Password" />
+            <MFXButton fx:id="dbConnect" onAction="#Verif_Db_connect" text="Appliquer" translateY="15.0" />
+            <ImageViewButton />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

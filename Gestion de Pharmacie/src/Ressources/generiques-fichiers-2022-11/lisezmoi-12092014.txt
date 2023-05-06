@@ -1,0 +1,141 @@
+
+                       EXTRACTION DE LA BASE DE DONNEES 
+              DU REPERTOIRE DES GROUPES GENERIQUES DE L'ANSM
+
+
+ 1. Introduction
+
+ Ce document décrit le format, le contenu et les 
+ liens entre les cinq fichiers ci-dessous : 
+
+ - fic01den.txt
+ - fic02grp.txt
+ - fic03spe.txt
+ - fic04sub.txt
+ - fic05cip.txt
+
+ Ces fichiers sont issus de l'extraction d'une partie des informations 
+ de la base de données du répertoire des spécialités génériques
+ de l'ANSM. Les informations suivantes n'y figurent pas :
+    
+    - excipients à effet notoire
+    - classe ATC
+    - titulaire de l'AMM
+    - exploitant
+
+Attention, il existe dans ce répertoire des spécialités qui peuvent 
+être citées à la fois comme spécialités génériques à part 
+entière mais aussi comme spécialités utiles dans 
+le cadre de la substitution pour satisfaire une posologie 
+et une durée de traitement en complément d'une autre 
+spécialité générique (cf fichier fic03spe.txt et 
+fichier fic04sub.txt).
+
+
+ 2. Les différents fichiers 
+
+  Les fichiers sont au format texte, les champs sont séparés 
+  par le caractère de tabulation.
+  
+  Le Code Identifiant de Spécialité (CIS) et le Code Identifiant de 
+  Présentation (CIP) sont des codes publiés au Journal Officiel.
+  Les autres identifiants proposés constituent des clefs à vocation informatique.
+  
+  Pour rappel, le code CIS est attribué par l'ANSM, depuis mi-2004,
+  à toute spécialité faisant ou ayant fait l'objet d'une autorisation de mise sur le marché.  
+
+  2.1. Fichier : fic01den.txt
+  ------------------------------
+      
+       Fichier des dénominations communes.              
+
+       Description des champs du fichier :
+    
+         premier champ : identifiant interne de la dénomination commune
+         tabulation
+         deuxième champ : libellé de la dénomination commune
+
+  2.2. Fichier : fic02grp.txt
+  -----------------------------
+  
+       Fichier des groupes génériques associés 
+       aux dénominations communes.
+    
+       Une dénomination commune est liée à un à plusieurs groupes 
+       génériques. 
+
+       Description des champs du fichier :
+             
+         premier champ : identifiant interne de la dénomination commune
+         tabulation
+         deuxième champ : identifiant interne du groupe générique 
+         tabulation
+         troisième champ : voie(s) d'administration(s) du groupe générique
+         tabulation
+         quatrième champ : libellé du groupe générique 
+
+  2.3. Fichier : fic03spe.txt
+  ------------------------------
+
+       Fichier des spécialités pharmaceutiques 
+       associées aux groupes génériques.
+    
+       Un groupe générique inclut une à plusieurs spécialités 
+       pharmaceutiques.  
+
+       Description des champs du fichier :
+             
+         premier champ : identifiant interne du groupe générique 
+         tabulation
+         deuxième champ : code CIS de la spécialité pharmaceutique
+         tabulation
+         troisième champ : statut de la spécialité au sein du groupe.
+		           R : spécialité de référence
+                           G : spécialité générique M
+			   S : spécialité Substituable
+         tabulation
+         quatrième champ : dénomination de la spécialité pharmaceutique 
+         tabulation
+         cinquième champ : la mention "CHANGEMENT" indique que la spécialité a fait l'objet
+                           d'un changement de dénomination et ne figurera donc plus sous ce nom 
+                           dans le répertoire six mois après la survenue de ce changement.
+
+  2.4. Fichier : fic04sub.txt
+  ------------------------------
+
+       Fichier des spécialités génériques par complémentarité posologique 
+       En l'absence de sécabilité de la spécialité du premier champ, la spécialité 
+       du deuxième champ est nécessaire, en cas de substitution 
+       pour staisfaire la posologie prescrite.
+    
+       Description des champs du fichier :
+             
+         premier champ : code CIS de la spécialité générique 
+                         non sécable
+         tabulation
+         deuxième champ : code CIS de la spécialité nécessaire en
+	                  cas de substitution et correspondant à 
+                          un demi-comprimé de la spécialité du 
+                          premier champ 
+                                          
+  2.5. Fichier : fic05cip.txt 
+  -----------------------------
+
+       Fichier des présentations associées aux spécialités.
+  
+       Une spécialité pharmaceutique existe sous une à plusieurs 
+       présentations.
+
+	Pour les présentations injectables :
+	La présentation à sélectionner est celle dont le volume correspond à celui de la spécialité de référence.
+
+       Description des champs du fichier :
+
+         premier champ : code CIS de la spécialité pharmaceutique      
+         tabulation
+         deuxième champ : code CIP associé à la spécialité pharmaceutique
+         tabulation
+         troisième champ : non utilisé actuellement
+         tabulation
+         quatrième champ : libellé de présentation            
+

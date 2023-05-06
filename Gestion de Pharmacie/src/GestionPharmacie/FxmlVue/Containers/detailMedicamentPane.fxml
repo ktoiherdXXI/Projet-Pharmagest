@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="detailMedicamentAnchorPane" prefHeight="670.0" prefWidth="1024.0" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerDetailMedicament">
+   <children>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="133.0" text="Inventaire" textFill="#1d242e80">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="listMedicamentLink" alignment="CENTER" layoutX="207.0" layoutY="38.0" onAction="#GoListMedicament" prefHeight="32.0" prefWidth="284.0" text="Liste de Médicament">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="496.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomMedicament" layoutX="519.0" layoutY="37.0" prefHeight="32.0" prefWidth="453.0" text="Azithral 500 Tablet">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="540.0" text="* Tous les champs sont obligatoires sauf celles marqués comme (optionel).">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="829.0" layoutY="77.0" AnchorPane.rightAnchor="23.80000000000001">
+         <children>
+            <MFXButton fx:id="editMedoc" prefHeight="40.0" prefWidth="160.0" rippleColor="WHITE" style="-fx-background-color: #03A9F5;" text="Editer les Details" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <MFXFontIcon description="mfx-file" selectionEnd="1" selectionFill="#ffffff00" size="20.0" strokeLineCap="ROUND" tabSize="10" textAlignment="CENTER" wrappingWidth="30.400085404515266">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </MFXFontIcon>
+               </graphic>
+               <font>
+                  <Font name="Papyrus" size="15.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </HBox>
+      <VBox focusTraversable="true" layoutX="54.0" layoutY="134.0" prefHeight="501.0" prefWidth="946.0" spacing="30.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="23.600000000000023">
+         <children>
+            <HBox maxHeight="-Infinity" prefHeight="140.0" spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: fff; -fx-border-color: rgba(29, 36, 46, 0.3); -fx-border-radius: 5px;" VBox.vgrow="ALWAYS">
+                          <items>
+                            <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <HBox layoutX="35.0" layoutY="16.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="94.0" text="Médicament" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Rockwell Condensed" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Line endX="350.492919921875" endY="5.035519716329873E-4" fill="#1d242e4d" startX="-100.0" stroke="#1d242e4d" strokeLineCap="BUTT" strokeMiterLimit="1.0" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="451.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <HBox layoutX="35.0" layoutY="16.0" spacing="170.0" AnchorPane.bottomAnchor="11.200000000000003" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.39999999999998">
+                                       <children>
+                                          <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label fx:id="idMedoc" prefHeight="18.0" prefWidth="94.0" text="298" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="18.0" prefWidth="94.0" text="Médicament ID" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Regular" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label fx:id="grpMedoc" prefHeight="18.0" prefWidth="94.0" text="24" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="18.0" prefWidth="117.0" text="Groupe de Médicamant" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Regular" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" style="-fx-border-color: rgba(29, 36, 46, 0.3); -fx-border-radius: 5px; -fx-background-color: fff;" VBox.vgrow="ALWAYS">
+                           <items>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <HBox layoutX="35.0" layoutY="16.0" spacing="160.0" AnchorPane.bottomAnchor="8.799999999999997" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="21.0">
+                                       <children>
+                                          <Label prefHeight="22.0" prefWidth="123.0" text="Inventaire en quantitée" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Rockwell Condensed" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Hyperlink contentDisplay="CENTER" text="Actualisé le Stock &gt;&gt;" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="350.492919921875" endY="5.035519716329873E-4" layoutX="10.0" layoutY="10.0" startX="-100.0" stroke="#1d242e4d" strokeLineCap="BUTT" strokeMiterLimit="1.0" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="451.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <HBox layoutX="35.0" layoutY="16.0" spacing="40.0" AnchorPane.bottomAnchor="11.200000000000003" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.39999999999998" AnchorPane.topAnchor="16.0">
+                                       <children>
+                                          <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label fx:id="nbFournisseurs" prefHeight="18.0" prefWidth="94.0" text="298" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="18.0" prefWidth="112.0" text="Fournisseurs aggrées" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Regular" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label fx:id="nbVenteSurMedoc" prefHeight="18.0" prefWidth="94.0" text="290" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="18.0" prefWidth="94.0" text="Ventes réalisés" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Regular" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label fx:id="nbMedocRestant" prefHeight="18.0" prefWidth="94.0" text="08" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="18.0" prefWidth="94.0" text="Stock réstant" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Regular" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" spacing="40.0">
+               <children>
+                  <VBox maxHeight="-Infinity" HBox.hgrow="ALWAYS">
+                     <children>
+                        <SplitPane dividerPositions="0.5" maxHeight="-Infinity" orientation="VERTICAL" prefHeight="122.0" prefWidth="946.0" style="-fx-background-color: fff; -fx-border-color: rgba(29, 36, 46, 0.3); -fx-border-radius: 5px;" VBox.vgrow="ALWAYS">
+                           <items>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <Line endX="842.7715454101562" endY="4.985809326171875" startX="-102.12129974365234" startY="4.985796928405762" stroke="#1d242e4d" strokeLineCap="BUTT" strokeMiterLimit="1.0" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <Label layoutX="35.0" layoutY="16.0" prefHeight="20.0" prefWidth="196.0" text="Comment consommer le Médicament" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Rockwell Condensed" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="945.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <JFXTextArea fx:id="usageMedoc" editable="false" layoutX="32.0" layoutY="8.0" prefHeight="50.0" prefWidth="880.0" promptText="Apportez le maximum de précision" text="Prendre le médicament par mois avec ou sans repas comme vous l'a spécifiez votre médecin, à usage quotidien." unFocusColor="#4d4d4d00" wrapText="true" AnchorPane.bottomAnchor="8.000000000000007" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.799999999999955" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="180.0" maxHeight="-Infinity" spacing="40.0">
+               <children>
+                  <VBox maxHeight="-Infinity" HBox.hgrow="ALWAYS">
+                     <children>
+                        <SplitPane dividerPositions="0.5" maxHeight="-Infinity" orientation="VERTICAL" prefHeight="122.0" prefWidth="946.0" style="-fx-background-color: fff; -fx-border-color: rgba(29, 36, 46, 0.3); -fx-border-radius: 5px;" VBox.vgrow="ALWAYS">
+                           <items>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <Line endX="842.7715454101562" endY="4.985809326171875" startX="-102.12129974365234" startY="4.985796928405762" stroke="#1d242e4d" strokeLineCap="BUTT" strokeMiterLimit="1.0" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <Label layoutX="35.0" layoutY="16.0" prefHeight="20.0" prefWidth="196.0" text="Les effets secondaires" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Rockwell Condensed" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="effetSecondMedoc" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="945.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <JFXTextArea editable="false" layoutX="32.0" layoutY="8.0" prefHeight="50.0" prefWidth="880.0" promptText="Apportez le maximum de précision" text="Des étourdissements, de la somnolence, des nausées, des vomissements, de la fatigue, un excès de salive/bave, une vision floue, un gain de poids, de la constipation, des maux de tête et des troubles du sommeil peuvent survenir. Si l’un de ces effets persiste ou s’aggrave, consultez votre médecin." unFocusColor="#4d4d4d00" wrapText="true" AnchorPane.bottomAnchor="8.800000000000004" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.799999999999955" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <MFXButton fx:id="supMedoc" prefHeight="42.0" prefWidth="240.0" rippleColor="WHITE" style="-fx-background-color: white; -fx-border-color: #F0483E; -fx-border-radius: 5px;" text="Supprimer le Médicament" textAlignment="CENTER" textFill="#f0483e">
+               <graphic>
+                  
+               </graphic>
+               <font>
+                  <Font name="Papyrus" size="15.0" />
+               </font>
+               <graphic>
+                  <MFXFontIcon description="mfx-delete" size="20.0" wrappingWidth="22.79998779296875">
+                     <color>
+                        <Color red="0.9411764740943909" green="0.2823529541492462" blue="0.24313725531101227" />
+                     </color>
+                  </MFXFontIcon>
+               </graphic>
+            </MFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

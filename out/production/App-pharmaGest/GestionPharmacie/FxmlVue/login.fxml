@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import jfxtras.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerDashboard">
+   <children>
+      <AnchorPane fx:id="opacityPane" layoutX="-15.0" layoutY="4.0" prefHeight="200.0" prefWidth="200.0" styleClass="opacityPane" stylesheets="@../stylesheet/opacityPane.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="105.0" layoutX="29.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/Group%203.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="323.0" fitWidth="496.0" focusTraversable="true" layoutX="316.0" layoutY="88.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Group%202.png" />
+               </image>
+               <effect>
+                  <Blend mode="RED" />
+               </effect>
+            </ImageView>
+            <MFXTextField floatingText="Identifiant" layoutX="33.0" layoutY="199.0" measureUnitGap="10.0" prefHeight="50.0" prefWidth="225.0" promptText="exemple@sample.com" styleClass="id" stylesheets="@../stylesheet/LoginStyle.css">
+               <textFill>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXTextField>
+            <MFXPasswordField floatingText="Mot de passe" layoutX="34.0" layoutY="270.0" measureUnitGap="10.0" prefHeight="50.0" prefWidth="224.0" styleClass="pswd" stylesheets="@../stylesheet/LoginStyle.css">
+               <textFill>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXPasswordField>
+            <MFXButton layoutX="158.0" layoutY="346.0" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #079BBB;" text="Login">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6558641791343689" green="0.8007973432540894" blue="0.8333333134651184" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </MFXButton>
+            <Hyperlink layoutX="34.0" layoutY="350.0" prefHeight="24.0" prefWidth="118.0" text="Mot de passe oublié ?">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="97.0" layoutY="388.0" prefWidth="99.0" text="Inscrivez-vous !" />
+            <MFXTextField floatingText="Identifiant" layoutX="37.0" layoutY="420.0" measureUnitGap="10.0" prefHeight="50.0" prefWidth="225.0" promptText="exemple@sample.com" styleClass="id" stylesheets="@../stylesheet/LoginStyle.css" visible="false">
+               <textFill>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXTextField>
+            <MFXButton depthLevel="LEVEL3" layoutX="300.0" layoutY="432.0" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: #079BBB;" text="Recevez-votre mot par mail" visible="false">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6558641791343689" green="0.8007973432540894" blue="0.8333333134651184" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </MFXButton>
+            <VBox layoutX="662.0" layoutY="198.0" prefHeight="500.0" prefWidth="281.0" styleClass="vbox" stylesheets="@../stylesheet/vboxLogin.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView id="imgDB" fitHeight="101.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" graphicTextGap="10.0" prefHeight="26.0" prefWidth="222.0" text="Database host" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

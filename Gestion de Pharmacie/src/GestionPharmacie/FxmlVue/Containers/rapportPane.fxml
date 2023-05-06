@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="dashboardPane" prefHeight="672.0" prefWidth="1040.0" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="275.0" text="Rapports généraux liés à la pharmacy">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <MFXTreeView layoutX="1.0" layoutY="308.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="7.0" prefWidth="1038.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+      <Group layoutX="306.0" layoutY="148.0">
+         <children>
+            <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#01a768" strokeType="INSIDE" width="212.0" />
+            <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" stroke="#01a768" strokeType="INSIDE" width="212.0" />
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="87.0" layoutY="9.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/Figma/Dashboard-Pharmacy-Management/health_and_safety_black_24dp%201.png" />
+               </image>
+            </ImageView>
+            <Text fill="#1d242e" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="523" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+               <font>
+                  <Font name="Montserrat Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#1d242e" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rapport des Payments" textAlignment="CENTER" wrappingWidth="172.39998168945294">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutY="125.0" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: rgba(1, 167, 104, 0.30);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" />
+         </children>
+      </Group>
+      <Group layoutX="54.0" layoutY="148.0">
+         <children>
+            <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#fed600" strokeType="INSIDE" width="212.0" />
+            <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" stroke="#fed600" strokeType="INSIDE" width="212.0" />
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="87.0" layoutY="9.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/Figma/Dashboard-Pharmacy-Management/Vector.png" />
+               </image>
+            </ImageView>
+            <Text fill="#1d242e" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 8 55 875" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+               <font>
+                  <Font name="Montserrat Bold" size="20.0" />
+               </font>
+            </Text>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutY="125.0" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: rgba(254, 214, 0, 0.3);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" />
+            <Text fill="#1d242e" layoutX="7.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rapport Totale des Ventes" textAlignment="CENTER" wrappingWidth="198.79996032714826">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <MFXButton layoutX="819.0" layoutY="45.0" prefHeight="46.0" prefWidth="185.0" rippleColor="WHITE" style="-fx-background-color: #F0483E;" text="Ajouter un Groupe" textAlignment="CENTER" textFill="WHITE">
+         <graphic>
+            <MFXFontIcon description="mfx-plus" selectionEnd="1" selectionFill="#ffffff00" size="20.0" strokeLineCap="ROUND" tabSize="10" textAlignment="CENTER" wrappingWidth="30.400085404515266">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </MFXFontIcon>
+         </graphic>
+         <font>
+            <Font name="Papyrus" size="15.0" />
+         </font>
+      </MFXButton>
+      <Label layoutX="54.0" layoutY="45.0" prefHeight="32.0" prefWidth="304.0" text="Rapports">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

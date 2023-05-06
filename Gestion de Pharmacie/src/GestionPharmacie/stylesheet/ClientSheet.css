@@ -1,0 +1,22 @@
+/* Card container */
+.card {
+  /* -fx-background-color: white; */
+  /* -fx-border-color: #ccc; */
+  /* -fx-border-width: 1px; */
+  /* -fx-border-radius: 5px; */
+  /* -fx-padding: 10px; */
+}
+
+.datePiker {
+  -fx-background-color: #fff;
+  -fx-border-color: #ccc;
+  /* -fx-border-width: 1px; */
+  /* -fx-border-radius: 5px; */
+}
+
+.datePiker .arrow-button {
+  -fx-background-color: #fff;
+  /* -fx-border-color: #ccc; */
+  /* -fx-border-width: 1px; */
+  /* -fx-border-radius: 5px; */
+}

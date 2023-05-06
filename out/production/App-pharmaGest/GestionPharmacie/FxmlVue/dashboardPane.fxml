@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.*?>
+<?import com.jfoenix.controls.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerDashboard">
+   <center>
+      <AnchorPane fx:id="dashboardPane" prefHeight="735.0" prefWidth="973.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="0.7999992370605469" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="98.0" prefWidth="1002.0" spacing="250.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="98.0" prefWidth="408.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="149.0" text="Dashboard">
+                           <font>
+                              <Font name="Montserrat Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="312.0" text="Une vue rapide des donnés sur l'inventaire.">
+                           <font>
+                              <Font name="Montserrat Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <MFXRectangleToggleNode prefHeight="43.0" prefWidth="201.0" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <JFXComboBox prefHeight="26.0" prefWidth="162.0" promptText="Télécharger le Rapport" unFocusColor="#4d4d4d00" />
+                     </graphic>
+                  </MFXRectangleToggleNode>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutX="0.7999992370605469" layoutY="82.4000015258789" prefHeight="652.0" prefWidth="1008.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="221.0" prefWidth="1006.0" spacing="50.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" spacing="25.0" style="-fx-border-color: #01a768; -fx-border-radius: 5px;">
+                           <children>
+                              <ImageView fitHeight="37.0" fitWidth="37.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/health_and_safety_black_24dp%201.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="État" textAlignment="CENTER" wrappingWidth="133.19999999999982" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Statut de l'inventaire" textAlignment="CENTER" wrappingWidth="170.0" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton alignment="CENTER" contentDisplay="BOTTOM" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: rgba(1, 167, 104, 0.30);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" VBox.vgrow="ALWAYS" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="174.0" prefWidth="200.0" spacing="25.0" style="-fx-border-color: #fed600; -fx-border-radius: 5px;">
+                           <children>
+                              <ImageView fitHeight="37.0" fitWidth="37.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/Vector.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 8 55 875" textAlignment="CENTER" wrappingWidth="133.19999999999982" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="79.0" promptText="Jan 2022" HBox.hgrow="ALWAYS" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue :" textAlignment="CENTER" wrappingWidth="78.8000671386717" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: rgba(254, 214, 0, 0.3);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" VBox.vgrow="ALWAYS" />
+                           </children>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="174.0" prefWidth="200.0" spacing="20.0" style="-fx-border-color: #03a9f5; -fx-border-radius: 5px;">
+                           <children>
+                              <ImageView fitHeight="37.0" fitWidth="37.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/medical_services_black_24dp%202.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="298" textAlignment="CENTER" wrappingWidth="133.19999999999982" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Médicaments disponibles" textAlignment="CENTER" wrappingWidth="170.0" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#ShowStockPane" prefHeight="33.0" prefWidth="217.0" style="-fx-background-color: rgba(3, 169, 245, 0.3);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" VBox.vgrow="ALWAYS" />
+                           </children>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="174.0" prefWidth="200.0" spacing="15.0" style="-fx-border-radius: 5px; -fx-border-color: #f0483e;">
+                           <children>
+                              <ImageView fitHeight="37.0" fitWidth="37.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Image/Figma/Dashboard-Pharmacy-Management/Vector-2.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="01" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Rupture Medicament " textAlignment="CENTER" wrappingWidth="170.0">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="time" text="Label" />
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#ShowCommandePane" prefHeight="32.0" prefWidth="198.0" style="-fx-background-color: rgba(240, 72, 62, 0.3);" text="Résoudre maintenant &gt;&gt;" textAlignment="CENTER" textFill="#1d242e" VBox.vgrow="ALWAYS" />
+                           </children>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="45.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="418.0" prefWidth="957.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="80.0" VBox.vgrow="SOMETIMES">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="30.0" style="-fx-border-color: rgb(29, 36, 46,0.3);" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox spacing="20.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="190.0">
+                                             <children>
+                                                <Label prefHeight="25.0" prefWidth="140.0" text="Inventaire" textFill="#1d242e" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Hyperlink prefHeight="23.0" prefWidth="180.0" text="Voir la configuration &gt;&gt;" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                             </padding>
+                                          </HBox>
+                                          <Separator prefHeight="0.5" prefWidth="420.0" style="-fx-background-color: rgb(29, 36, 46,0.3);" />
+                                       </children>
+                                    </VBox>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="75.0">
+                                       <children>
+                                          <Text fx:id="nbMedicamaent" strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="nbGrpMedicament" strokeType="OUTSIDE" strokeWidth="0.0" text="24" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="60.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NobreTotale de médicaments" wrappingWidth="144.67336654663086" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Groupes de médicaments" wrappingWidth="187.07340621948242" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" layoutX="11.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="30.0" style="-fx-border-color: rgb(29, 36, 46,0.3);">
+                                 <children>
+                                    <VBox spacing="20.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="190.0">
+                                             <children>
+                                                <Label prefHeight="25.0" prefWidth="140.0" text="Simple Rapport" textFill="#1d242e" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="180.0" promptText="Jan 2022" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                             </padding>
+                                          </HBox>
+                                          <Separator prefHeight="0.5" prefWidth="420.0" style="-fx-background-color: rgb(29, 36, 46,0.3);" />
+                                       </children>
+                                    </VBox>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="75.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="24" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="60.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Qty de médicament vendus" wrappingWidth="144.67336654663086" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Factures  Générés" wrappingWidth="187.07340621948242" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="208.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="80.0" VBox.vgrow="SOMETIMES">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="30.0" style="-fx-border-color: rgb(29, 36, 46,0.3);" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox spacing="20.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="190.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="140.0" text="Ma Pharmacie" textFill="#1d242e" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Hyperlink prefHeight="23.0" prefWidth="180.0" text="Gestion des utilisateurs &gt;&gt;" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                             </padding>
+                                          </HBox>
+                                          <Separator prefHeight="0.5" prefWidth="420.0" style="-fx-background-color: rgb(29, 36, 46,0.3);" />
+                                       </children>
+                                    </VBox>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="75.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="04" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="05" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="60.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Total de Fournisseurs" wrappingWidth="144.67336654663086" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres Total d'utilisateurs" wrappingWidth="187.07340621948242" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" layoutX="11.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="30.0" style="-fx-border-color: rgb(29, 36, 46,0.3);">
+                                 <children>
+                                    <VBox spacing="20.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="190.0">
+                                             <children>
+                                                <Label prefHeight="25.0" prefWidth="140.0" text="Clientels" textFill="#1d242e" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Bold" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Hyperlink prefHeight="23.0" prefWidth="180.0" text="Voir la Clientel" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="20.0" right="20.0" />
+                                             </padding>
+                                          </HBox>
+                                          <Separator prefHeight="0.5" prefWidth="420.0" style="-fx-background-color: rgb(29, 36, 46,0.3);" />
+                                       </children>
+                                    </VBox>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="75.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adalimumab" wrappingWidth="195.34006881713867" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="60.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Total de Clients" wrappingWidth="144.67336654663086" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Médicaments Féquenments acheté" wrappingWidth="187.07340621948242" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="45.0" right="100.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <View fx:id="viewPane" disable="true" layoutX="961.0" layoutY="28.0" opacity="0.0" prefHeight="35.0" prefWidth="34.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

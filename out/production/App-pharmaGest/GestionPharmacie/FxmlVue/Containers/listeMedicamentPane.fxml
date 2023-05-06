@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="listMedicamentAnchPane" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerListeMedicPane">
+   <children>
+      <Label layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="133.0" text="Inventaire" textFill="#1d242e80">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="428.0" text="Liste de médicaments disponible en vente">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="50.0" layoutY="200.0">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <MFXButton fx:id="btnAjoutMedicament" defaultButton="true" layoutX="770.0" layoutY="45.0" onAction="#AjoutMedicament" prefHeight="46.0" prefWidth="235.0" rippleAnimateShadow="true" rippleColor="WHITE" style="-fx-background-color: #F0483E;" text="Ajouter un médicament" textAlignment="CENTER" textFill="WHITE">
+         <graphic>
+            <MFXFontIcon description="mfx-plus" selectionEnd="1" selectionFill="#ffffff00" size="20.0" strokeLineCap="ROUND" tabSize="10" textAlignment="CENTER" wrappingWidth="37.600036576390266">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </MFXFontIcon>
+         </graphic>
+         <font>
+            <Font name="Papyrus" size="15.0" />
+         </font>
+      </MFXButton>
+      <Label layoutX="214.0" layoutY="41.0" prefHeight="32.0" prefWidth="345.0" text="Liste de Médicament (298)">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <MFXPaginatedTableView fx:id="listMedicTable" layoutX="58.0" layoutY="111.0" minWidth="-Infinity" prefHeight="152.0" prefWidth="950.0" />
+   </children>
+</AnchorPane>

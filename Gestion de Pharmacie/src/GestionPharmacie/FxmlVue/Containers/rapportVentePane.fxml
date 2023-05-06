@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.*?>
+<?import com.jfoenix.controls.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="672.0" prefWidth="1040.0" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerRapportVentesPane">
+   <children>
+      <MFXRectangleToggleNode layoutX="805.0" layoutY="44.0" prefHeight="43.0" prefWidth="201.0">
+         <graphic>
+            <JFXComboBox prefHeight="26.0" prefWidth="162.0" promptText="Télécharger le Rapport" unFocusColor="#4d4d4d00" />
+         </graphic>
+      </MFXRectangleToggleNode>
+      <Label layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="118.0" text="Rapport" textFill="#00000080">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="312.0" text="Rapport de vente de la pharmacie.">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="41.0" prefHeight="32.0" prefWidth="17.0" text="&gt;" textFill="#00000080">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="41.0" prefHeight="32.0" prefWidth="240.0" text="Rapport de Vente">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <AreaChart fx:id="AreaChart" disable="true" layoutX="721.0" layoutY="125.0" opacity="0.0" prefHeight="149.0" prefWidth="274.0" style="-fx-background-radius: 5px;" title="Ventes Réalisés">
+        <xAxis>
+          <CategoryAxis label="Période:  Mensuel" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Nombre de ventes" side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <View fx:id="viewPane" layoutX="54.0" layoutY="162.0" prefHeight="378.0" prefWidth="526.0" style="-fx-background-radius: 5px;" />
+      <MFXTableView fx:id="listCmd" layoutX="623.0" layoutY="162.0" prefHeight="378.0" prefWidth="383.0" />
+   </children>
+</AnchorPane>

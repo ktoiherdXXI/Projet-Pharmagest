@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ajoutMedicamentAnchorPane" prefHeight="670.0" prefWidth="1024.0" style="-fx-background-color: rgba(237, 241, 245, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerAjoutMedicament">
+   <children>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="133.0" text="Inventaire" textFill="#1d242e80">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="listMedicamentLink" alignment="CENTER" layoutX="207.0" layoutY="38.0" onAction="#GoListMedicament" prefHeight="32.0" prefWidth="284.0" text="Liste de Médicament">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="496.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+         <font>
+            <Font name="Montserrat Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="518.0" layoutY="41.0" prefHeight="32.0" prefWidth="242.0" text="Ajout Médicament">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="540.0" text="* Tous les champs sont obligatoires sauf celles marqués comme (optionel).">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="54.0" layoutY="134.0" prefHeight="403.0" prefWidth="706.0">
+         <children>
+            <HBox spacing="40.0">
+               <children>
+                  <MFXTextField alignment="BASELINE_LEFT" floatMode="BORDER" floatingText="Nom du médicament" floatingTextGap="10.0" measureUnitGap="10.0" prefHeight="40.0" prefWidth="335.0" textLimit="55" />
+                  <MFXTextField alignment="BASELINE_LEFT" floatMode="BORDER" floatingText="ID médicament" floatingTextGap="10.0" measureUnitGap="10.0" prefHeight="40.0" prefWidth="335.0" textLimit="55" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <MFXTextField alignment="BASELINE_LEFT" floatMode="BORDER" floatingText="Groupe du médicament" floatingTextGap="10.0" layoutX="54.0" layoutY="200.0" measureUnitGap="10.0" prefHeight="40.0" prefWidth="335.0" textLimit="55" />
+      <MFXSpinner layoutX="425.0" layoutY="199.0" prefHeight="40.0" prefWidth="335.0" promptText="La quantité en nombre" />
+      <MFXTextField accessibleRole="TEXT_AREA" alignment="TOP_LEFT" floatMode="BORDER" floatingText="Effet secondaire" floatingTextGap="10.0" layoutX="54.0" layoutY="413.0" measureUnitGap="10.0" prefHeight="120.0" prefWidth="705.0" promptText="Indiquer les différents effets secondaires pouvant êtres subit après administratration du médicament." />
+      <MFXTextField accessibleRole="TEXT_AREA" floatMode="BORDER" floatingText="Instruction d'usage" floatingTextGap="10.0" layoutX="54.0" layoutY="265.0" measureUnitGap="10.0" prefHeight="120.0" prefWidth="705.0" promptText="Indiquer la manière auquelle doit-on administrer le médicament." />
+      <MFXButton layoutX="54.0" layoutY="585.0" prefHeight="46.0" prefWidth="235.0" rippleColor="WHITE" style="-fx-background-color: #F0483E;" text="Enregistrer les détails" textAlignment="CENTER" textFill="WHITE">
+         <graphic>
+            <MFXFontIcon description="mfx-modena-mark" selectionEnd="1" selectionFill="#ffffff00" size="20.0" strokeLineCap="ROUND" tabSize="10" textAlignment="CENTER" wrappingWidth="37.600036576390266">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </MFXFontIcon>
+         </graphic>
+         <font>
+            <Font name="Papyrus" size="15.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>

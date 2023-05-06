@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import io.github.palexdev.materialfx.font.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.tableview2.*?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerListeGrpMedicPane">
+   <center>
+      <AnchorPane fx:id="listeGrpMedicamentPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="695.0" prefWidth="1040.0" style="-fx-background-color: rgba(237, 241, 245, 1);" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="133.0" text="Inventaire" textFill="#1d242e80">
+               <font>
+                  <Font name="Montserrat Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="14.0" text="&gt;">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="41.0" prefHeight="32.0" prefWidth="304.0" text="Medicine Groups (02)">
+               <font>
+                  <Font name="Montserrat Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="428.0" text="Liste des groupes de médicaments disponible en vente">
+               <font>
+                  <Font name="Montserrat Regular" size="14.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="50.0" layoutY="200.0" prefWidth="955.0">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+            </GridPane>
+            <MFXButton layoutX="803.0" layoutY="45.0" prefHeight="46.0" prefWidth="202.0" rippleColor="WHITE" style="-fx-background-color: #F0483E;" text="Ajouter un Groupe" textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <MFXFontIcon description="mfx-plus" selectionEnd="1" selectionFill="#ffffff00" size="20.0" strokeLineCap="ROUND" tabSize="10" textAlignment="CENTER" wrappingWidth="37.600036576390266">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </MFXFontIcon>
+               </graphic>
+               <font>
+                  <Font name="Papyrus" size="15.0" />
+               </font>
+            </MFXButton>
+            <MFXTableView fx:id="listeGrpMedicTable" accessibleRole="TABLE_VIEW" disable="true" layoutX="50.0" layoutY="110.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.0" prefHeight="570.0" prefWidth="955.0" AnchorPane.rightAnchor="34.799999999999955" />
+            <MFXTextField fx:id="dataR" floatMode="BORDER" floatingText="ID Medoc" layoutX="520.0" layoutY="49.0" prefHeight="50.0" prefWidth="96.0" />
+            <MFXTextField fx:id="dataR1" floatMode="BORDER" floatingText="ID Groupe Medoc" layoutX="651.0" layoutY="49.0" prefHeight="50.0" prefWidth="96.0" />
+            <TableView2 fx:id="tab" disable="true" layoutX="54.0" layoutY="110.0" opacity="0.0" prefHeight="550.0" prefWidth="950.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="36.0" />
+            <TableView fx:id="tableView" layoutX="54.0" layoutY="110.0" prefHeight="550.0" prefWidth="950.0" tableMenuButtonVisible="true" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="36.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

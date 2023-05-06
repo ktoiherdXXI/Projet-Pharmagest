@@ -1,0 +1,70 @@
+
+.id .mfx-password-field {
+	-fx-primary-color: #007acc;
+	-fx-secondary-color: #4B6EAF;
+	-fx-grey-color: #b9b9b9;
+    
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.id {
+	-fx-accent: -fx-primary-color;
+	-fx-background-color: -fx-grey-color, white;
+	/* -fx-background-insets: 0, 0 0 1 0; */
+	/* -fx-background-radius: 0; */
+    -fx-focus-color: -fx-secondary-color;
+	-fx-text-fill: white;
+
+}
+
+.id:floating >.text-field , .id:floating >.text-field >.text  {
+	-fx-fill: white;
+	-fx-prompt-text-fill: white;
+}
+
+
+.mfx-password-field{
+    -fx-accent: -fx-primary-color;
+	-fx-background-color: -fx-grey-color, white;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-background-radius: 0;
+	-fx-text-fill: white;
+	-fx-prompt-text-fill: white;
+
+}
+
+.mfx-password-field:masked .mfx-icon-wrapper .mfx-ripple-generator{
+	-fx-text-fill: white;
+	-fx-prompt-text-fill: white;
+	-fx-fill :white;
+	-mfx-ripple-color: white;
+
+}
+.mfx-password-field:masked .floating-text >.text
+/* .mfx-password-field:masked >.text-field >.text*/{
+	/* -fx-text-fill: white; */
+	-fx-prompt-text-fill: white;
+	-fx-fill :white; 
+	/* -mfx-ripple-color: white;  */
+
+}
+
+.mfx-password-field:masked .floating-text >.text{
+	-fx-text-fill: white;
+	-fx-prompt-text-fill: white;
+}
+
+.id .mfx-password-field:focused {
+	-fx-background-color: -fx-primary-color, white;
+}
+
+.hyperlink > {
+	-fx-text-fill: #007acc;
+}
+
+
+.hyperlink:visited{
+	
+	-fx-text-fill: #84aea7;
+}
+

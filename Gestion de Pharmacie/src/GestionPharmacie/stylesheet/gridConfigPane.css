@@ -1,0 +1,8 @@
+.toggle-button:hover {
+  -fx-background-color: #507d9f;
+  -fx-background-radius: 0;
+  /* -fx-border-color: #e6e6e6; */
+  -fx-border-radius: 5px;
+  /* -fx-border-width: 0; */
+  /* -fx-padding: 0; */
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerClientPane">
+   <center>
+      <VBox fillWidth="false">
+         <children>
+              
+                    <!-- Zone d'informations sur le patient sélectionné -->
+              <VBox fillWidth="false" prefHeight="295.0" prefWidth="799.0" spacing="5.0" style="-fx-padding: 20;">
+                  <Label prefHeight="33.0" prefWidth="260.0" style="-fx-font-size: 18; -fx-padding: 0 0 10 0;" text="Informations sur le patient" VBox.vgrow="SOMETIMES" />
+               <VBox alignment="CENTER_LEFT" spacing="20.0" VBox.vgrow="SOMETIMES">
+                  <children>
+                     <HBox spacing="50.0">
+                        <children>
+                           <MFXTextField fx:id="prenomLabel" floatMode="BORDER" floatingText="Prénom : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                           <MFXTextField fx:id="nomLabel" floatMode="BORDER" floatingText="Nom : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        </children>
+                     </HBox>
+                        <HBox spacing="50.0">
+                        <MFXDatePicker fx:id="dateNaissanceLabel" floatMode="BORDER" floatingText="Date de Naissance" prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        <MFXTextField fx:id="adresseLabel" floatMode="BORDER" floatingText="Adresse : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        </HBox>
+                     <HBox spacing="50.0">
+                        <children>
+                           <MFXTextField fx:id="telephoneLabel" floatMode="BORDER" floatingText="Numéro de téléphone : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                           <MFXTextField fx:id="emailLabel" floatMode="BORDER" floatingText="Adresse e-mail : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        </children>
+                     </HBox>
+                     <HBox spacing="50.0">
+                        <children>
+                           <MFXTextField fx:id="ssnLabel" floatMode="BORDER" floatingText="Numéro de sécurité sociale : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                           <MFXTextField fx:id="assuranceLabel" floatMode="BORDER" floatingText="Numéro de carte d'assurance maladie : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        </children>
+                     </HBox>
+                     <HBox spacing="50.0">
+                        <children>
+                           <MFXTextField fx:id="medicamentsLabel" floatMode="BORDER" floatingText="Médicaments actuels : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                           <MFXTextField fx:id="antecedentsLabel" floatMode="BORDER" floatingText="Antécédents médicaux de la famille : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        </children>
+                     </HBox>
+                     <HBox spacing="50.0">
+                        <children>
+                           <MFXTextField fx:id="allergiesLabel" floatMode="BORDER" floatingText="Allergies : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                           <MFXTextField fx:id="conditionsLabel" floatMode="BORDER" floatingText="Conditions médicales préexistantes : " prefHeight="53.0" prefWidth="260.0" HBox.hgrow="SOMETIMES" />
+                        </children>
+                     </HBox>
+                  </children>
+               </VBox>
+      
+                    </VBox>
+          
+                    <!-- Zone de boutons d'action -->
+              <HBox prefHeight="100.0" prefWidth="800.0" spacing="50.0" style="-fx-padding: 20;" VBox.vgrow="SOMETIMES">
+                  <Button fx:id="addButton" styleClass="jfx-button" stylesheets="@../../stylesheet/modifClient.css" text="Ajouter" HBox.hgrow="SOMETIMES" />
+                  <Button fx:id="editButton" styleClass="jfx-button" stylesheets="@../../stylesheet/modifClient.css" text="Modifier" HBox.hgrow="SOMETIMES" />
+                  <Button fx:id="deleteButton" styleClass="jfx-button" stylesheets="@../../stylesheet/modifClient.css" text="Supprimer" HBox.hgrow="SOMETIMES" />
+              </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+        
+              <!-- Barre de pied de page -->
+        <HBox prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #3f51b5; -fx-alignment: center-right; -fx-padding: 0 10;" BorderPane.alignment="CENTER">
+            <Label style="-fx-font-size: 14; -fx-text-fill: white;" text="© Pharmacy App 2023" />
+        </HBox>
+   </bottom>
+   <top>
+        
+                             <!-- Zone de recherche -->
+        <VBox prefHeight="78.0" prefWidth="1000.0" style="-fx-padding: 20;" BorderPane.alignment="CENTER">
+            <Label style="-fx-font-size: 18; -fx-padding: 0 0 10 0;" text="Recherche de patient" VBox.vgrow="SOMETIMES" />
+            <HBox spacing="10" VBox.vgrow="SOMETIMES">
+            <MFXTextField fx:id="clientSearchBar" floatMode="DISABLED" floatingText="Entrez un nom ou un prénom" prefHeight="43.0" prefWidth="262.0" promptText="Entrez un nom ou un prénom" />
+                <Button text="Rechercher" HBox.hgrow="SOMETIMES">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></Button>
+            </HBox>
+        </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="513.0" prefWidth="270.0" stylesheets="@../../stylesheet/ClientSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <CardPane VBox.vgrow="SOMETIMES">
+               <items>
+                  <Label alignment="CENTER" contentDisplay="CENTER" disable="true" prefHeight="34.0" prefWidth="254.0" text="Listes des patients / clients " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="vBoxPane" prefHeight="524.0" prefWidth="254.0" />
+               </items>
+            </CardPane>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>
